@@ -19,8 +19,19 @@ def show_table(request):
 	return render(request, 'show_table.html', {})
 
 def table_data(request):
-	data = RollCall.objects.all();
-	jdata = {"total":len(data), "page":1, "records":len(data), "rows":[]}
+
+	try:
+		page = int(request.GET['page'])
+	except:
+		page = 1
+	try:
+		rowcount = int(request.GET['rows'])
+	except:
+		rowcount = 20
+
+	data = RollCall.objects.all()[(page-1)*rowcount: (page)*rowcount];
+	jdata = {"total":len(data), "page":page, "records":rowcount, "rows":[]}
+	
 	for rc in data:
 		row = {}
 		row['date'] = unicode(rc.date)
