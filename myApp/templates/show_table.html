@@ -5,90 +5,49 @@
 {% endblock %}
 
 {% block css %}
-{#    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">#}
-    <link rel="stylesheet" href="/static/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/ui.jqgrid.css"/>
+    <link rel="stylesheet" href="/static/css/smoothness/jquery-ui-1.10.3.custom.css"/>
 {% endblock %}
 {% block js %}
     <script type="text/javascript" src="/static/js/bootstrap.js"></script>
     <script type="text/javascript" language="javascript" src="/static/js/jquery.js"></script>
-    <script type="text/javascript" language="javascript" src="/static/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/jquery.jqGrid.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $("#thetable").dataTable();
-        });
+
+	$(document).ready(function(){
+	    jQuery("#maintable").jqGrid({
+			datatype: "local",
+			height: 250,
+	   		colNames:['کد','بستانکاری', 'بدهکاری', 'جزئیات'],
+	   		colModel:[
+		   		{name:'col1',index:'col1', width:60, sorttype:"int"},		
+		   		{name:'col2',index:'col2', width:60, sorttype:"int"},		
+		   		{name:'col3',index:'col3', width:60, sorttype:"int"},		
+		   		{name:'col4',index:'col4', width:60, sorttype:"int"}	
+		   	],
+	   		multiselect: true,
+	   		caption: "Manipulating Array Data",
+   			width: "650",
+			height: "100%"
+	   	});
+		var mydata = [
+				{col1:"1", col2:"123", col3:"سلام چزوری", col4:"4"},
+				{col1:"1", col2:"123", col3:"3", col4:"4"},
+				{col1:"1", col2:"123", col3:"3", col4:"4"},
+				{col1:"1", col2:"123", col3:"3", col4:"4"}
+		];		
+		for(var i=0;i<=mydata.length;i++)
+			jQuery("#maintable").jqGrid('addRowData', i+1, mydata[i]);
+	    jQuery("#maintable").jqGrid('navGrid','#tablepager',{edit:false,add:false,del:false});
+	});
     </script>
 {% endblock %}
 
 {% block content %}
     <div class="panel">
         <h2 class="panel-header"> گزارش مالی </h2>
-
-        <table id="thetable" class="FNC-table2 table-hover table-striped">
-            <thead>
-
-				<td class="FNC-th-td" >کد </td>
-				<td class="FNC-th-td"> بستانکاری</td>
-				<td class="FNC-th-td"> بدهکاری </td>
-				<td class="FNC-th-td"> شرح جزئیات </td>
-                <td class="FNC-th-td">  </td>
-			</thead>
-            <tbody>
-                {% for cb in costBenefits %}
-                    <tr>
-
-						<td class="FNC-td2">
-						<label for="code" class="nohand col-lg-2 control-label">{{ cb.id }}</label>
-						</td>
-						<td class="FNC-td2"> {{ cb.bestan }} </td>
-						<td class="FNC-td2"> {{ cb.bedeh }} </td>
-						<td class="FNC-td2"> {{ cb.description }} </td>
-                        <td class="FNC-td2">ویرایش </td>
-					</tr>
-                {% endfor %}
-                    <tr>
-
-						<td class="FNC-td2">
-						<label for="code" class="nohand col-lg-2 control-label">22</label>
-						</td>
-						<td class="FNC-td2"> 232 </td>
-						<td class="FNC-td2"> 2423 </td>
-						<td class="FNC-td2"> sfgdfgfdg </td>
-                        <td class="FNC-td2">ویرایش </td>
-					</tr>
-<tr>
-
-						<td class="FNC-td2">
-						<label for="code" class="nohand col-lg-2 control-label">22</label>
-						</td>
-						<td class="FNC-td2"> 232 </td>
-						<td class="FNC-td2"> 2423 </td>
-						<td class="FNC-td2"> sfgdfgfdg </td>
-                        <td class="FNC-td2">ویرایش </td>
-					</tr><tr>
-
-						<td class="FNC-td2">
-						<label for="code" class="nohand col-lg-2 control-label">22</label>
-						</td>
-						<td class="FNC-td2"> 232 </td>
-						<td class="FNC-td2"> 2423 </td>
-						<td class="FNC-td2"> sfgdfgfdg </td>
-                        <td class="FNC-td2">ویرایش </td>
-					</tr>
-
-            {% for sb in saleBills %}
-                    <tr>
-						<td class="FNC-td2 Edit"> <input type="image" class="FNC-myimage2 Edit" src="images/financial/edit_pic.jpg"/></td>
-						<td class="FNC-td2">
-						<label for="code" class="nohand col-lg-2 control-label">{{ sb.id }}</label>
-						</td>
-						<td class="FNC-td2"> {{ sb.totalPrice }} </td>
-						<td class="FNC-td2">  </td>
-						<td class="FNC-td2"> {{ sb.customer.get_full_name}} خرید توسط</td>
-					</tr>
-                {% endfor %}
-
-            </tbody>
-        </table>
+        <table id="maintable"> </table>
+        <div id="tablepager"></div>
     </div>
 {% endblock %}
 {% block menus %}

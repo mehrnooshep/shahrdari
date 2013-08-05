@@ -162,3 +162,7 @@ body
 {
     vertical-align: top;
 }
+
+#gbox_maintable{
+	margin-right:auto;
+}
