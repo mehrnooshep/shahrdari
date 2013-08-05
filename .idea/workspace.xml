@@ -5,7 +5,7 @@
     <ignored path="shahrdariProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/urls.py" changelist="32ff8cc0-3197-4aad-89fe-25a0e8e53738" time="1375713312006" ignored="false" />
-    <file path="/views.py" changelist="32ff8cc0-3197-4aad-89fe-25a0e8e53738" time="1375713333812" ignored="false" />
+    <file path="/views.py" changelist="32ff8cc0-3197-4aad-89fe-25a0e8e53738" time="1375713611806" ignored="false" />
     <file path="/mybase.html" changelist="32ff8cc0-3197-4aad-89fe-25a0e8e53738" time="1375692659443" ignored="false" />
     <file path="/settings.py" changelist="32ff8cc0-3197-4aad-89fe-25a0e8e53738" time="1375694601163" ignored="false" />
     <file path="/_menus.html" changelist="32ff8cc0-3197-4aad-89fe-25a0e8e53738" time="1375713069960" ignored="false" />
@@ -71,7 +71,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shahrdariProject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="39" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+            <state line="19" column="38" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +80,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myApp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="22" selection-start="658" selection-end="658" vertical-scroll-proportion="0.323185">
+            <state line="26" column="8" selection-start="765" selection-end="765" vertical-scroll-proportion="0.28337237">
               <folding />
             </state>
           </provider>
@@ -654,6 +654,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shahrdariProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="38" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myApp/templates/show_table.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="53" selection-start="874" selection-end="874" vertical-scroll-proportion="-2.3461537">
@@ -661,16 +668,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shahrdariProject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="39" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="22" selection-start="658" selection-end="658" vertical-scroll-proportion="0.323185">
+        <state line="26" column="8" selection-start="765" selection-end="765" vertical-scroll-proportion="0.28337237">
           <folding />
         </state>
       </provider>
