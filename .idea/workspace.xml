@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shahrdariProject/static/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1399" column="10" selection-start="21013" selection-end="21013" vertical-scroll-proportion="0.4554217">
+            <state line="1399" column="10" selection-start="21013" selection-end="21013" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -55,7 +55,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="0" selection-start="815" selection-end="815" vertical-scroll-proportion="-0.65384614">
               <folding>
-                <marker date="1375712868837" expanded="true" signature="1034:1179" placeholder="[...]" />
+                <marker date="1375713871098" expanded="true" signature="1034:1179" placeholder="[...]" />
               </folding>
             </state>
           </provider>
@@ -79,10 +79,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shahrdariProject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="43" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
+            <state line="21" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="0.7616823">
               <folding />
             </state>
           </provider>
@@ -153,13 +153,13 @@
         <option value="$PROJECT_DIR$/myApp/templates/_menus.html" />
         <option value="$PROJECT_DIR$/shahrdariProject/settings.py" />
         <option value="$PROJECT_DIR$/myApp/views.py" />
-        <option value="$PROJECT_DIR$/shahrdariProject/urls.py" />
         <option value="$PROJECT_DIR$/shahrdariProject/static/css/base.css" />
         <option value="$PROJECT_DIR$/myApp/templates/show_table.html" />
         <option value="$PROJECT_DIR$/shahrdariProject/templates/base.html" />
         <option value="$PROJECT_DIR$/myApp/templates/mybase.html" />
         <option value="$PROJECT_DIR$/myApp/models.py" />
         <option value="$PROJECT_DIR$/shahrdariProject/static/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/shahrdariProject/urls.py" />
       </list>
     </option>
   </component>
@@ -592,13 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shahrdariProject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="43" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shahrdariProject/static/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="21" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
@@ -655,7 +648,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="815" selection-end="815" vertical-scroll-proportion="-0.65384614">
           <folding>
-            <marker date="1375712868837" expanded="true" signature="1034:1179" placeholder="[...]" />
+            <marker date="1375713871098" expanded="true" signature="1034:1179" placeholder="[...]" />
           </folding>
         </state>
       </provider>
@@ -692,7 +685,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shahrdariProject/static/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1399" column="10" selection-start="21013" selection-end="21013" vertical-scroll-proportion="0.4554217">
+        <state line="1399" column="10" selection-start="21013" selection-end="21013" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shahrdariProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="0.7616823">
           <folding />
         </state>
       </provider>
