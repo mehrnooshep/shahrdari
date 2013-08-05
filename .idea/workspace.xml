@@ -53,8 +53,10 @@
       <file leaf-file-name="show_table.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myApp/templates/show_table.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="-0.65384614">
-              <folding />
+            <state line="23" column="0" selection-start="815" selection-end="815" vertical-scroll-proportion="-0.65384614">
+              <folding>
+                <marker date="1375712868837" expanded="true" signature="1034:1179" placeholder="[...]" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,7 +64,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myApp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +82,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shahrdariProject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="43" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+            <state line="19" column="43" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -592,7 +594,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shahrdariProject/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="43" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+        <state line="19" column="43" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -644,15 +646,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myApp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myApp/templates/show_table.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="-0.65384614">
-          <folding />
+        <state line="23" column="0" selection-start="815" selection-end="815" vertical-scroll-proportion="-0.65384614">
+          <folding>
+            <marker date="1375712868837" expanded="true" signature="1034:1179" placeholder="[...]" />
+          </folding>
         </state>
       </provider>
     </entry>
