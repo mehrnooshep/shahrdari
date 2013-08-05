@@ -1,6 +1,8 @@
 # Create your views here.
 from django.shortcuts import render
 from django.http import HttpResponse
+from myApp.models import *
+import json
 
 def index(request):
 	#request.get['username']
@@ -15,3 +17,15 @@ def show_table(request):
 	#l = SaleBill.objects.all()[0]
 	#return HttpResponse('{0} and {1} and {2}'.format(l.saleDate, l.totalPrice, l.costumer.balance))
 	return render(request, 'show_table.html', {})
+
+def table_data(request):
+	data = RollCall.objects.all();
+	jdata = {"total":len(data), "page":1, "records":len(data), "rows":[]}
+	for rc in data:
+		row = {}
+		row['date'] = unicode(rc.date)
+		row['entrance'] = unicode(rc.entrance_time)
+		row['exit'] = unicode(rc.exit_time)
+		jdata['rows'].append(row)
+	return HttpResponse(json.dumps(jdata), content_type="application/json")
+

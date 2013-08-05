@@ -11,34 +11,29 @@
 {% block js %}
     <script type="text/javascript" src="/static/js/bootstrap.js"></script>
     <script type="text/javascript" language="javascript" src="/static/js/jquery.js"></script>
+	<script type="text/javascript" language="javascript" src="/static/js/grid.locale-fa.js"></script>
     <script type="text/javascript" language="javascript" src="/static/js/jquery.jqGrid.min.js"></script>
+    
+
     <script type="text/javascript">
 
 	$(document).ready(function(){
 	    jQuery("#maintable").jqGrid({
-			datatype: "local",
-			height: 250,
-	   		colNames:['کد','بستانکاری', 'بدهکاری', 'جزئیات'],
+	    	url: '/tabledata',
+			datatype: "json",
+	   		colNames:['تاریخ','زمان ورود', 'زمان خروج'],
 	   		colModel:[
-		   		{name:'col1',index:'col1', width:60, sorttype:"int"},		
-		   		{name:'col2',index:'col2', width:60, sorttype:"int"},		
-		   		{name:'col3',index:'col3', width:60, sorttype:"int"},		
-		   		{name:'col4',index:'col4', width:60, sorttype:"int"}	
+		   		{name:'date',index:'date', width:60, sorttype:'date'},		
+		   		{name:'entrance',index:'entrance', width:60, sorttype:'date'},		
+		   		{name:'exit',index:'exit', width:60, sorttype:'date'}
 		   	],
 	   		multiselect: true,
 	   		caption: "Manipulating Array Data",
    			width: "650",
-			height: "100%"
+			height: "100%",
+			pager: "tablepager"
 	   	});
-		var mydata = [
-				{col1:"1", col2:"123", col3:"سلام چزوری", col4:"4"},
-				{col1:"1", col2:"123", col3:"3", col4:"4"},
-				{col1:"1", col2:"123", col3:"3", col4:"4"},
-				{col1:"1", col2:"123", col3:"3", col4:"4"}
-		];		
-		for(var i=0;i<=mydata.length;i++)
-			jQuery("#maintable").jqGrid('addRowData', i+1, mydata[i]);
-	    jQuery("#maintable").jqGrid('navGrid','#tablepager',{edit:false,add:false,del:false});
+	    // jQuery("#maintable").jqGrid('navGrid','#tablepager',{edit:false,add:false,del:false});
 	});
     </script>
 {% endblock %}
