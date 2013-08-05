@@ -17,5 +17,5 @@ urlpatterns = patterns('',
 
 	url(r'^$', 'myApp.views.index', name='index'),
 	url(r'^test1$', 'myApp.views.show_table', name='show-table'),
-	url(r'^tabledata$', 'myApp.views.table_data', name='table-data'),
+	url(r'^tabledata/(?P<filter_id>\d+)$', 'myApp.views.table_data', name='table-data'),
 )

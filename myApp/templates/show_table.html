@@ -18,21 +18,25 @@
     <script type="text/javascript">
 
 	$(document).ready(function(){
-	    jQuery("#maintable").jqGrid({
-	    	url: '/tabledata',
-			datatype: "json",
-	   		colNames:['تاریخ','زمان ورود', 'زمان خروج'],
-	   		colModel:[
-		   		{name:'date',index:'date', width:60, sorttype:'date'},		
-		   		{name:'entrance',index:'entrance', width:60, sorttype:'date'},		
-		   		{name:'exit',index:'exit', width:60, sorttype:'date'}
-		   	],
-	   		multiselect: true,
-	   		caption: "Manipulating Array Data",
-   			width: "650",
-			height: "100%",
-			pager: "tablepager"
-	   	});
+        $(".table_filter").click(function(){
+            jQuery("#maintable").jqGrid({
+                url: '/tabledata/'+this.id.substr(7),
+                datatype: "json",
+                colNames:['تاریخ','زمان ورود', 'زمان خروج'],
+                colModel:[
+                    {name:'date',index:'date', width:60, sorttype:'date'},
+                    {name:'entrance',index:'entrance', width:60, sorttype:'date'},
+                    {name:'exit',index:'exit', width:60, sorttype:'date'}
+                ],
+                multiselect: true,
+                caption: "Manipulating Array Data",
+                width: "650",
+                height: "100%",
+                pager: "tablepager"
+            });
+        });
+
+
 	    // jQuery("#maintable").jqGrid('navGrid','#tablepager',{edit:false,add:false,del:false});
 	});
     </script>

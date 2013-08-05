@@ -18,8 +18,8 @@ def show_table(request):
 	#return HttpResponse('{0} and {1} and {2}'.format(l.saleDate, l.totalPrice, l.costumer.balance))
 	return render(request, 'show_table.html', {})
 
-def table_data(request):
-
+def table_data(request, filter_id):
+	filter_id = int(filter_id)
 	try:
 		page = int(request.GET['page'])
 	except:
