@@ -1,7 +1,7 @@
 {% extends "mybase.html" %}
 
 {% block head %}
-    <title>گزارش مالی</title>
+{#   title#}
 {% endblock %}
 
 {% block css %}
@@ -22,6 +22,7 @@
             jQuery("#maintable").jqGrid({
                 url: '/tabledata/'+this.id.substr(7),
                 datatype: "json",
+
                 colNames:['تاریخ','زمان ورود', 'زمان خروج'],
                 colModel:[
                     {name:'date',index:'date', width:60, sorttype:'date'},
@@ -44,7 +45,7 @@
 
 {% block content %}
     <div class="panel">
-        <h2 class="panel-header"> گزارش مالی </h2>
+        <h2 class="panel-header"> گزارش </h2>
         <table id="maintable"> </table>
         <div id="tablepager"></div>
     </div>
