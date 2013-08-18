@@ -22,19 +22,30 @@
             jQuery("#maintable").jqGrid({
                 url: '/tabledata/'+this.id.substr(7),
                 datatype: "json",
-
-                colNames:['تاریخ','زمان ورود', 'زمان خروج'],
+                rowattr: "class: tableRow",
+                colNames:['زیر سامانه','ETLشروع','ETLپایان','ETLموفقیت','SSASشروع','SSASپایان','SSASموفقیت'],
                 colModel:[
-                    {name:'date',index:'date', width:60, sorttype:'date'},
-                    {name:'entrance',index:'entrance', width:60, sorttype:'date'},
-                    {name:'exit',index:'exit', width:60, sorttype:'date'}
+                    {name:'name',index:'date', width:60, sorttype:'date'},
+                    {name:'ETLStart',index:'exit', width:60, sorttype:'date'},
+                    {name:'ETLEnd',index:'date', width:60, sorttype:'date'},
+                    {name:'ETLSuccess',index:'date', width:60, sorttype:'date'},
+                    {name:'SSASStart',index:'date', width:60, sorttype:'date'},
+                    {name:'SSASEnd',index:'date', width:60, sorttype:'date'},
+                    {name:'SSASSuccess',index:'date', width:60, sorttype:'date'}
+
                 ],
-                multiselect: true,
-                caption: "Manipulating Array Data",
-                width: "650",
+{#                multiselect: true,#}
+                caption: "",
+                width: "735",
                 height: "100%",
-                pager: "tablepager"
+                pager: "tablepager",
+                success: function(){
+
+                    console.log("SUCCESS");
+                }
             });
+
+
         });
 
 
@@ -46,7 +57,7 @@
 {% block content %}
     <div class="panel">
         <h2 class="panel-header"> گزارش </h2>
-        <table id="maintable"> </table>
+        <table id="maintable">  </table>
         <div id="tablepager"></div>
     </div>
 {% endblock %}

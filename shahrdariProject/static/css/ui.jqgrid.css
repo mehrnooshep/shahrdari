@@ -3,8 +3,8 @@
 .ui-jqgrid .ui-jqgrid-view {position: relative;left:0; top: 0; padding: 0; font-size:11px;}
 /* caption*/
 .ui-jqgrid .ui-jqgrid-titlebar {padding: .3em .2em .2em .3em; position: relative; border-left: 0 none;border-right: 0 none; border-top: 0 none;}
-.ui-jqgrid .ui-jqgrid-title { float: left; margin: .1em 0 .2em; }
-.ui-jqgrid .ui-jqgrid-titlebar-close { position: absolute;top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height:18px;}.ui-jqgrid .ui-jqgrid-titlebar-close span { display: block; margin: 1px; }
+.ui-jqgrid .ui-jqgrid-title { float: left; margin: .1em 0 .2em;  }
+.ui-jqgrid .ui-jqgrid-titlebar-ui-jqgrid-sortableclose { position: absolute;top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height:18px;}.ui-jqgrid .ui-jqgrid-titlebar-close span { display: block; margin: 1px; }
 .ui-jqgrid .ui-jqgrid-titlebar-close:hover { padding: 0; }
 /* header*/
 .ui-jqgrid .ui-jqgrid-hdiv {position: relative; margin: 0;padding: 0; overflow-x: hidden; border-left: 0 none !important; border-top : 0 none !important; border-right : 0 none !important;}
@@ -24,7 +24,7 @@
 .ui-jqgrid .ui-icon-desc {margin-top:3px;height:12px;}
 .ui-jqgrid .ui-i-asc {margin-top:0;height:16px;}
 .ui-jqgrid .ui-i-desc {margin-top:0;margin-left:13px;height:16px;}
-.ui-jqgrid .ui-jqgrid-sortable {cursor:pointer;}
+.ui-jqgrid .ui-jqgrid-sortable {cursor:pointer; }
 .ui-jqgrid tr.ui-search-toolbar th { border-top-width: 1px !important; border-top-color: inherit !important; border-top-style: ridge !important }
 tr.ui-search-toolbar input {margin: 1px 0 0 0}
 tr.ui-search-toolbar select {margin: 1px 0 0 0}
@@ -149,3 +149,5 @@ tr.ui-search-toolbar select {margin: 1px 0 0 0}
 .ui-search-menu { position: absolute; padding: 2px 5px;}
 .ui-jqgrid .ui-search-table { padding: 0px 0px; border: 0px none; height:20px; width:100%;}
 .ui-jqgrid .ui-search-table .ui-search-oper { width:20px; }
+/*.ui-jqgrid .ui-widget ui-widget-content ui-corner-all {width: 700px }*/
+/*.ui-jqgrid-view {width: 700px }*/
